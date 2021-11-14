@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="js/functions.js"></script>
+</head>
+<header>
+
+  <nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="#">Demon Slayer</a>
+
+      </div>
+
+      <ul class="nav navbar-nav">
+
+        <li><a href="3010 pj1.html" target="_blank">Home</a></li>
+
+        <li><a href="registration.html" target="_blank">Register</a></li>
+
+        <li><a href="animation.html" target="_blank">Animations</a></li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+</header>
+<body onload="registerHandlers();">
+<form id="myForm">
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <form method="POST">
+      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 text-left">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="form-group" id="firn">
+              <label for="name">First Name:</label>
+              <input id="name" name="name" class="form-control"
+                     type="text" placeholder="Zijian"/>
+            </div>
+
+            <div class="form-group" id="user">
+              <label for="username">Username:</label>
+              <input id="username" name="username" class="form-control"
+                     type="text" placeholder="JESSE"/>
+            </div>
+
+            <div class="form-group" id="passDiv">
+              <label for="password">Password:</label>
+              <input id="password" name="password" class="form-control"
+                     type="password" value=""/>
+              <span id="passErr"></span>
+            </div>
+
+
+            <div class="form-group" id="ADD1">
+              <label for="address1">Address 1:</label>
+              <input id="address1" name="address1" class="form-control"
+                     type="text" placeholder="xxxxxxx" size="100"/>
+            </div>
+
+
+
+            <div class="form-group" id="STAT">
+              <label for="state" >State:</label>
+              <select id="state" name="state" class="form-control" required="required">
+                <option value="" selected="selected" hidden="hidden" disabled="disabled">
+                  --Please Select--
+                </option>
+                <option value="CA">California</option>
+                <option value="MO">Missouri</option>
+                <option value="NY">New York</option>
+                <option value="OR">Oregon</option>
+              </select>
+            </div>
+            <div class="form-group" id="zz">
+              <label for="zip">Zip:</label>
+              <input id="zip" name="zip" class="form-control"
+                     type="text" placeholder="xxxxx-xxxx"/>
+            </div>
+
+
+
+
+          <div class="form-group" id="GEND">
+            <h4>Gender</h4>
+
+            <input type="radio"
+                   name="gender" id="maleGender"
+                   value="male" required="required"/> <label for="maleGender">Male</label><br/>
+            <input type="radio"
+                   name="gender" id="femaleGender"
+                   value="female"/> <label for="femaleGender">Female</label><br/>
+            <input type="radio"
+                   name="gender" id="otherGender"
+                   value="other"/> <label for="otherGender">Other</label><br/>
+          </div>
+
+          <div class="form-group" id="BIRT">
+            <label for="birthDay">Date of birth:</label><br/>
+            <input id="birthDay" type="date" name="birthDay" required="required"/><br/>
+            </div>
+
+          </div>
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6">
+
+            <div class="form-group" id="lasn">
+              <label for="name">Last Name:</label>
+              <input id="lastName" name="lastName" class="form-control"
+                     type="text" placeholder="Huang"/>
+            </div>
+
+            <div class="form-group" id="emm">
+              <label for="email">Email:</label>
+              <input id="email" name="email" class="form-control"
+                     type="email" placeholder="email@domain.com"/>
+            </div>
+
+            <div class="form-group" id="verPassDiv">
+              <label for="password2">Repeat Password:</label>
+              <input id="password2" name="password2" class="form-control"
+                     type="password" value=""/>
+              <span id="verPassErr" ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="address2">Address 2:</label>
+              <input id="address2" name="address2" class="form-control"
+                     type="text" placeholder="xxxxxxx" size="100"/>
+            </div>
+
+
+            <div class="form-group" id="CITT">
+              <label for="city" required="required">City:</label>
+              <input id="city" name="city" class="form-control"
+                     type="text" placeholder="St.Louis"/>
+            </div>
+
+            <div class="form-group" id="lalala">
+              <label for="tel">Phone:</label>
+              <input id="tel" name="tel" class="form-control"
+                     type="tel" placeholder="xxx-xxx-xxxx"/>
+            </div>
+          <div class="form-group" id="MARI">
+            <h4>Marital Status</h4>
+            <input type="radio"
+                   name="marital" id="single"
+                   value="single" required="required"/> <label for="single">Single</label><br/>
+            <input type="radio"
+                   name="marital" id="relation"
+                   value="relation"/> <label for="relation">In a relationship</label><br/>
+            <input type="radio"
+                   name="marital" id="married"
+                   value="married"/> <label for="married">Married</label><br/>
+            <input type="radio"
+                   name="marital" id="divorced"
+                   value="divorced"/> <label for="divorced">Divorced</label><br/>
+            </div>
+
+
+          </div>
+          <input type="submit" class="btn btn-success" value="Submit Button">
+          <input type="reset" class="btn btn-info" value="Reset Button">
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<footer class="container-fluid text-center" class="navbar navbar-inverse">
+
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://demonslayer-anime.com/risshihen/" target="_blank" class="w3-hover-text-green">Zijian Huang</a></p>
+</footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+header{
+    background-color:#020a11;
+    font-weight: bold;
+
+}
+body {
+    background-image: url("img/ds1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    height: 700px;
+}
+footer {
+
+    margin-top: 700px;
+    width: 100%;
+    length: 100%;
+    text-align: center;
+    size: cover;
+
+    padding: 3px;
+
+    background-color: #000511;
+
+    color: #154a78;
+
+
+}
